@@ -1,15 +1,16 @@
 function deretAngka(n){
   let index=[]
   for (x=1;x<=n;x++){
-    if (x%3===0){
+    if (x%3===0 && x%5===0) {
+      index.push('NIOMIC');
+    }
+    else if (x%3===0){
       index.push('NIO');
     }
     else if (x%5===0){
       index.push('MIC');
     }
-    else if (x%3===0 && x%5===0) {
-      index.push('NIOMIC');
-    }
+
     else{
       index.push(x);
     }
@@ -18,4 +19,4 @@ function deretAngka(n){
   console.log(index.join(' '))
 }
 
-deretAngka(10);
+deretAngka(50);
