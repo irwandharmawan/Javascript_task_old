@@ -1,0 +1,56 @@
+body{
+  background: #c0c0c0;
+}
+h1{
+  text-align: center;
+  margin:40px 0px;
+}
+
+#loginBox{
+  border-radius: 10px;
+  width:350px;
+  background-color: white;
+  margin:10px auto;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 20px;
+}
+/*login button*/
+.login{
+  background-color: lightBlue;
+  font-size: 11pt;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+.submit_button{
+  background-color: orange;
+  color: white;
+  font-size: 11pt;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+label{
+  margin-bottom: 2px;
+}
+input{
+  margin-bottom:10px;
+  padding: 5px 4px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.tulisan_Login{
+  text-align: center;
+  font-size: 14pt;
+}

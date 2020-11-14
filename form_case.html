@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h1> LOGIN FORM </h1>
+    <div id='loginBox'>
+        <button class="login" id='login' onclick="goToLogin()">Login</button>
+
+    </div>
+
+    <script type='text/javascript'>
+      function goToLogin(){
+        let x=document.getElementById('login');
+        x.parentElement.removeChild(x);
+
+        //Making new elements
+        var p=document.createElement('p');
+        p.className='tulisan_Login';
+        p.innerHTML='Silahkan Login';
+        var element=document.getElementById('loginBox');
+
+        //
+        var form=document.createElement('form');
+        //
+        var labelName=document.createElement('label');
+        labelName.innerHTML='Full Name';
+        var telephone=document.createElement('label');
+        telephone.innerHTML='Telephone number'
+        var label=document.createElement('label');
+        label.innerHTML='Username';
+        var label2=document.createElement('label');
+        label2.innerHTML='Password';
+
+
+        var input_name=document.createElement('input');
+        input_name.type='text';
+        input_name.name='username';
+        input_name.className='input_name';
+        input_name.placeholder='Your Name'
+        //
+        var input_phone=document.createElement('input');
+        input_phone.type='tel';
+        input_phone.name='telephone';
+        input_phone.className='input_telephone';
+        input_phone.placeholder='Telephone Number'
+        //
+        var input_user=document.createElement('input');
+        input_user.type='text';
+        input_user.name='username';
+        input_user.className='input_login';
+        input_user.placeholder='Your Username';
+        //
+        var input_pass=document.createElement('input');
+        input_pass.type='password';
+        input_pass.className='input_password';
+        input_pass.name='password';
+        input_pass.placeholder='Your Password'
+
+        //button
+        var submit_btn=document.createElement('button');
+        submit_btn.innerHTML='Submit';
+        submit_btn.className='submit_button';
+
+        element.appendChild(p);
+        element.appendChild(form);
+        form.appendChild(labelName);
+        form.appendChild(input_name);
+        form.appendChild(telephone);
+        form.appendChild(input_phone);
+        form.appendChild(label);
+        form.appendChild(input_user);
+        form.appendChild(label2);
+        form.appendChild(input_pass);
+        form.appendChild(submit_btn);
+      }
+    </script>
+  </body>
+</html>

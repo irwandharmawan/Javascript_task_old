@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="getHost()"></button>
+    <button type="button" name="button" onclick="getHostName()"></button>
+    <button type="button" name="button" onclick="getHref()"></button>
+
+  <p></p>
+  <p></p>
+  <p></p>
+
+
+    <script type="text/javascript">
+      let x=document.getElementsByTagName('p');
+      function getHost(){
+        x[0].innerHTML=location.host;
+      }
+      function getHostName(){
+        x[1].innerHTML=location.hostname;
+      }
+      function getHref(){
+        x[2].innerHTML=location.href;
+      }
+    </script>
+  </body>
+</html>
